@@ -1,24 +1,55 @@
-🚀 TaskBuddy is a powerful task management app built using ReactJS. It helps users manage daily tasks with ease — add, update, delete, track progress, and clear all tasks with just one click!
+# TaskBuddy
 
-
-➡️ **For a step-by-step guide on how to build this project, watch the full video here:** [https://youtu.be/Q4aB0IgKYx0?si=L_NjJVoZvb7tbFAO]
-
+TaskBuddy is a focused React task manager for capturing daily work, tracking progress, and keeping a small list under control. Tasks are saved in the browser, so refreshing the page does not lose your list.
 
 ## Features
 
-- **Add Tasks**: Users can add new tasks to the list.
-- **Update Tasks**: Users can edit the details of existing tasks.
-- **Delete Tasks**: Users can remove tasks from the list.
-- **Clear All Tasks**: Users can clear all tasks with a single click.
-- **Progress Tracker**: Visual representation of the task completion status.
+- Add tasks with a priority and category.
+- Mark tasks complete or active.
+- Search tasks by name.
+- Filter by status or category.
+- See completion progress at a glance.
+- Remove individual tasks or clear completed tasks.
+- Responsive layout for desktop and mobile screens.
 
-## Usage
+## Run Locally
 
-- **Adding Tasks**: Enter task details and click "Add Task" to add a new task.
-- **Updating Tasks**: Click on a task to edit its details.
-- **Deleting Tasks**: Click the trash icon next to a task to delete it.
-- **Clearing All Tasks**: Click the "Clear All Tasks" button to remove all tasks.
-- **Progress Tracker**: View the progress of your tasks in the progress tracker.
+From the repository root:
 
-![image](https://github.com/user-attachments/assets/711647da-6702-49f3-9cde-be40719b270c)
+```powershell
+Set-Location .\TaskBuddy-Project-main
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite, usually `http://localhost:5173/`.
+
+## Scripts
+
+```powershell
+npm run dev      # Start the development server
+npm run lint     # Check source files with ESLint
+npm run build    # Create a production build
+npm run preview  # Preview the production build
+```
+
+## Data Storage
+
+Tasks are stored in `localStorage` under the `taskbuddy-tasks` key. Data is local to the browser and is not sent to a server.
+
+## Project Structure
+
+```text
+TaskBuddy-Project-main/
+	src/
+		components/
+			ProgressTracker.jsx
+			TaskForm.jsx
+			TaskList.jsx
+		App.jsx
+		Style.css
+		index.css
+		main.jsx
+	package.json
+```
 
